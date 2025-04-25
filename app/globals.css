@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lime-yellow: #e9ed00;
+  --bold-pink: #f72585;
+  --deep-purple-gray: #3c3c54;
+  --soft-white: #fafafa;
+  --light-blush: #ffe3ec;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-soft-white text-deep-purple-gray font-work-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-kanit font-semibold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-lime-yellow text-deep-purple-gray font-semibold py-3 px-6 rounded-lg 
+           shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border-2 border-bold-pink text-bold-pink font-semibold 
+           py-3 px-6 rounded-lg hover:bg-bold-pink hover:text-white 
+           transition-all duration-300 hover:scale-105;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md p-6 transition-all duration-300 hover:shadow-xl;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-deep-purple-gray;
+  }
+
+  .section-subtitle {
+    @apply text-xl md:text-2xl font-medium mb-8 text-deep-purple-gray/80;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
