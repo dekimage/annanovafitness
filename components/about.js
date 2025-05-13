@@ -5,17 +5,19 @@ export default function About() {
     <section id="about" className="section-padding bg-soft-white">
       <div className="container-custom">
         <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-2/5">
-            <div className="relative h-[450px] w-full rounded-2xl overflow-hidden shadow-xl">
+          <div className="md:w-2/5 w-full relative">
+            <div className="relative h-[400px] md:h-[450px] w-full rounded-2xl overflow-hidden">
               <Image
                 src="/h2.png"
                 alt="Anna Nova - Personal Fitness Coach"
                 fill
-                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 40vw"
+                priority
+                className="object-contain md:object-cover object-top"
               />
             </div>
-            <div className="absolute transform translate-x-1/2 -translate-y-1/2 bg-bold-pink h-20 w-20 rounded-full flex items-center justify-center shadow-lg">
-              <span className="font-kanit font-bold text-white text-center leading-tight">
+            <div className="absolute top-[85%] right-0 transform translate-x-1/2 -translate-y-1/2 bg-bold-pink h-16 w-16 md:h-20 md:w-20 rounded-full flex items-center justify-center shadow-lg">
+              <span className="font-kanit font-bold text-white text-center text-xs md:text-base leading-tight">
                 Certified Coach
               </span>
             </div>

@@ -28,13 +28,11 @@ export default function Hero() {
             </div>
           </div>
           <div className="md:w-1/2 relative">
-            <div className="relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-xl">
-              <Image
+            <div className="relative h-[500px] md:h-[500px] w-full rounded-2xl overflow-hidden flex items-center justify-center">
+              <img
                 src="/h1.png"
                 alt="Anna Nova Fitness Training"
-                fill
-                className="object-cover"
-                priority
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-lime-yellow h-24 w-24 rounded-full flex items-center justify-center shadow-lg">
