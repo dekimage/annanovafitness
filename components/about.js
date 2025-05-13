@@ -6,14 +6,11 @@ export default function About() {
       <div className="container-custom">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-2/5 w-full relative">
-            <div className="relative h-[400px] md:h-[450px] w-full rounded-2xl overflow-hidden">
-              <Image
+            <div className="relative h-[500px] md:h-[450px] w-full rounded-2xl overflow-hidden flex items-center justify-center">
+              <img
                 src="/h2.png"
                 alt="Anna Nova - Personal Fitness Coach"
-                fill
-                sizes="(max-width: 768px) 100vw, 40vw"
-                priority
-                className="object-contain md:object-cover object-top"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="absolute top-[85%] right-0 transform translate-x-1/2 -translate-y-1/2 bg-bold-pink h-16 w-16 md:h-20 md:w-20 rounded-full flex items-center justify-center shadow-lg">
